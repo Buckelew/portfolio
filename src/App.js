@@ -14,8 +14,6 @@ function App() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  console.log(aboutRef);
-
   return (
     <ErrorBoundary>
       <div className="App">

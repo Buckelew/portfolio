@@ -19,10 +19,8 @@ const Projects = forwardRef((props, ref) => {
   // disable scrolling while popup is active
   useEffect(() => {
     if (popupsArr.find((p) => p)) {
-      console.log("hide");
       document.body.style.overflow = "hidden";
     } else {
-      console.log("auto");
       document.body.style.overflow = "auto";
     }
   }, popupsArr);

@@ -1,0 +1,52 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 77px);
+  padding-bottom: 30%;
+}
+
+.Home > * {
+  padding: 0 5vw;
+  width: 100%;
+}
+
+.Home h1 {
+  color: #eaeaea;
+  margin-bottom: 20px;
+}
+
+.Home button {
+  /* margin-top: */
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+
+  border: none;
+  outline: none;
+  background: #242424;
+  background: linear-gradient(to right, #e39600, #ea4c89, #8f48eb, #1da1f2);
+  border: 1px solid #363636;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.Home button:hover {
+  opacity: 0.7;
+}
+
+.Home button:active {
+  opacity: 1;
+}
+
+.Home button svg {
+  margin-left: 5px;
+  transform: rotate(90deg);
+  fill: #b1b1b1;
+}

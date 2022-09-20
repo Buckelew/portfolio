@@ -1,0 +1,55 @@
+.About {
+  /* height: 50vh; */
+
+  display: flex;
+  margin: 5vh 0;
+}
+
+.About .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.About h1 {
+  color: #eaeaea;
+  margin-bottom: 15px;
+}
+
+.About .left .text {
+  overflow-y: auto;
+}
+
+.About p {
+  text-indent: 20px;
+  font-size: 1.125rem;
+}
+
+.About > div {
+  width: 50%;
+  min-height: 300px;
+  height: 20vh;
+}
+
+.About .right {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.About .Skill {
+  width: 33%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  word-break: break-all;
+}
+
+.About .Skill > img {
+  height: 3vmax;
+  width: 3vmax;
+  object-fit: fill;
+}

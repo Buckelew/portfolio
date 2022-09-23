@@ -10,6 +10,9 @@ import materialui from "./mui.png";
 import nodejs from "./nodejs.png";
 import postman from "./postman.png";
 import react from "./react.png";
+import photoshop from "./photoshop.png";
+import illustrator from "./illustrator.png";
+import indesign from "./indesign.png";
 
 export default {
   javascript,
@@ -24,4 +27,7 @@ export default {
   heroku,
   materialui,
   postman,
+  photoshop,
+  illustrator,
+  indesign,
 };

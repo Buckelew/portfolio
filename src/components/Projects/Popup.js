@@ -18,9 +18,11 @@ function Popup({ video }) {
     >
       <video
         style={{ width: "60vw", zIndex: 100 }}
-        src={video}
+        // src={video}
         controls
-      ></video>
+      >
+        <source src={`/projects/${video}.mp4`} type="video/mp4" />
+      </video>
     </div>
   );
 }

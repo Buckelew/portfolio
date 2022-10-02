@@ -1,33 +1,3 @@
-import css from "./css.png";
-import electron from "./electron.png";
-import express from "./express.png";
-import git from "./git.png";
-import heroku from "./heroku.png";
-import html from "./html.png";
-import javascript from "./javascript.png";
-import mongo from "./mongo.png";
-import materialui from "./mui.png";
-import nodejs from "./nodejs.png";
-import postman from "./postman.png";
-import react from "./react.png";
-import photoshop from "./photoshop.png";
-import illustrator from "./illustrator.png";
-import indesign from "./indesign.png";
-
-export default {
-  javascript,
-  html,
-  css,
-  react,
-  nodejs,
-  git,
-  mongo,
-  electron,
-  express,
-  heroku,
-  materialui,
-  postman,
-  photoshop,
-  illustrator,
-  indesign,
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3016aacd5dc5a44d679f85f387245688228c7b01b024ccbda8b1e3110711c89
+size 725

@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8559be1acd8cb103d9073cdeb6eeaea09af1c029ab9b835a7b3309258665cffe
-size 685
+.About {
+  /* height: 50vh; */
+
+  display: flex;
+  margin: 5vh 0;
+}
+
+.About .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.About h1 {
+  color: #eaeaea;
+  margin-bottom: 15px;
+}
+
+.About .left .text {
+  overflow-y: auto;
+}
+
+.About p {
+  text-indent: 20px;
+  font-size: 1.125rem;
+}
+
+.About > div {
+  width: 50%;
+  min-height: 300px;
+  height: 20vh;
+}
+
+.About .right {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.About .Skill {
+  width: 33%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  word-break: break-all;
+}
+
+.About .Skill > img {
+  height: 3vmax;
+  width: 3vmax;
+  object-fit: fill;
+}

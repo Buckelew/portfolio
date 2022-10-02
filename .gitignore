@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84acc887f00c71a171feb787cff009c65a7620a5cfabd971ece87fefad55cd76
-size 341
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Local Netlify folder
+.netlify

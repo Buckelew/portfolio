@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c00f055f106b5b38b986cd86128861e832664e1a73b4f2413b7577859b86febf
-size 91
+[lfs]
+	url = https://1a7e5f25-1c5d-40f6-8620-0a684c13958d.netlify.app/.netlify/large-media

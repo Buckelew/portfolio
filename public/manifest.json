@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87da055a97e89d7b68e670d3ac81f1a611158d71a616e6ac47ad956c75e4d067
-size 500
+{
+  "short_name": "Caden Buckelew",
+  "name": "Caden Buckelew's Portfolio",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

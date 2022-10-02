@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ef3ff80908621eb204f5892b386554bb382dc77ea497f503e05f182f3151876
-size 404
+.App {
+  height: calc(100% - 76px);
+}
+.App .body {
+  padding: 0 20vw;
+  margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App .body > div {
+  width: 100%;
+  max-width: 1000px;
+
+  scroll-margin-top: 100px;
+}
+
+.App .body > div > h1 {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .App .body {
+    padding: 0 5vw;
+  }
+}

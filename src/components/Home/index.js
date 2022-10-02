@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bd0f3ddb9647d70fc1ddedbf0222d36cffd0aa6bb4a08dd17601ceac8aa469d
-size 483
+import "./index.css";
+import ArrowDown from "../../assets/arrow_down";
+import { forwardRef } from "react";
+
+const Home = forwardRef(({ aboutRef }, ref) => {
+  const scroll = () => {
+    aboutRef.current.scrollIntoView();
+  };
+
+  return (
+    <div className="Home" ref={ref}>
+      <h1>Hi! I'm Caden.</h1>
+      <h1>I'm a full stack web developer.</h1>
+      <button onClick={scroll}>
+        Check out my work! <ArrowDown />
+      </button>
+    </div>
+  );
+});
+
+export default Home;

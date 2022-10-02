@@ -7,9 +7,6 @@ import proxyImg from "../../assets/projects/proxy-gen.png";
 import pacificImg from "../../assets/projects/pacificaio.png";
 import { forwardRef } from "react";
 import useToggle from "../../hooks/useToggle";
-import proxyGenVideo from "../../assets/projects/proxy-gen.mp4";
-import spoofToolVideo from "../../assets/projects/spoof-tool.mp4";
-import pacificVideo from "../../assets/projects/pacificaio.mp4";
 import { useEffect } from "react";
 
 const Projects = forwardRef((props, ref) => {
@@ -46,7 +43,7 @@ const Projects = forwardRef((props, ref) => {
       popup: {
         show: showPacificPopup,
         toggle: toggleShowPacificPopup,
-        video: pacificVideo,
+        video: "pacificaio",
       },
     },
     {
@@ -83,7 +80,7 @@ const Projects = forwardRef((props, ref) => {
       popup: {
         show: showSpoofPopup,
         toggle: toggleShowSpoofPopup,
-        video: spoofToolVideo,
+        video: "spoof-tool",
       },
     },
     {
@@ -97,7 +94,7 @@ const Projects = forwardRef((props, ref) => {
       popup: {
         show: showProxyPopup,
         toggle: toggleShowProxyPopup,
-        video: proxyGenVideo,
+        video: "proxy-gen",
       },
     },
   ];

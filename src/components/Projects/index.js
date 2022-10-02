@@ -4,17 +4,20 @@ import spoofToolImg from "../../assets/projects/spoof-tool.png";
 import cardleImg from "../../assets/projects/cardle.png";
 import spotifyImg from "../../assets/projects/spotify.jpg";
 import proxyImg from "../../assets/projects/proxy-gen.png";
+import pacificImg from "../../assets/projects/pacificaio.png";
 import { forwardRef } from "react";
 import useToggle from "../../hooks/useToggle";
 import proxyGenVideo from "../../assets/projects/proxy-gen.mp4";
 import spoofToolVideo from "../../assets/projects/spoof-tool.mp4";
+import pacificVideo from "../../assets/projects/pacificaio.mp4";
 import { useEffect } from "react";
 
 const Projects = forwardRef((props, ref) => {
   const [showProxyPopup, toggleShowProxyPopup] = useToggle(false);
-  const [showSpoofPopup, toggleshowSpoofPopup] = useToggle(false);
+  const [showSpoofPopup, toggleShowSpoofPopup] = useToggle(false);
+  const [showPacificPopup, toggleShowPacificPopup] = useToggle(false);
 
-  const popupsArr = [showProxyPopup, showSpoofPopup];
+  const popupsArr = [showProxyPopup, showSpoofPopup, showPacificPopup];
 
   // disable scrolling while popup is active
   useEffect(() => {
@@ -27,6 +30,26 @@ const Projects = forwardRef((props, ref) => {
 
   const projectList = [
     {
+      name: "Pacific AIO",
+      description:
+        "A checkout automation tool for securing limited collectibles.",
+      technologies: [
+        "React",
+        "Express",
+        "Mongo DB",
+        "Electron",
+        "Express",
+        "Node.JS",
+      ],
+      live: "",
+      image: pacificImg,
+      popup: {
+        show: showPacificPopup,
+        toggle: toggleShowPacificPopup,
+        video: pacificVideo,
+      },
+    },
+    {
       name: "Cardle",
       description: "A wordle-like game, but for car enthusiasts!",
       technologies: ["React", "Express", "Mongo DB", "Chart JS", "APIs"],
@@ -38,7 +61,6 @@ const Projects = forwardRef((props, ref) => {
       name: "Spotify App",
       description:
         "A way to view your favorite artists, and tracks via Spotify API.",
-      // "A web app using Spotify's API designed to display personalized Spotify data. View your top artists, top songs, and recently played songs.",
       technologies: ["React", "Material UI", "Spotify API", "Express"],
       github: "https://github.com/Buckelew/spotify-app",
       live: "https://caden-spotify.herokuapp.com/",
@@ -55,12 +77,12 @@ const Projects = forwardRef((props, ref) => {
         "Electron",
         "Mapbox",
       ],
-      github: "https://github.com/Buckelew/spoof-tool", // TODO : make public
-      live: "", // TODO : add video example
+      github: "https://github.com/Buckelew/spoof-tool",
+      live: "",
       image: spoofToolImg,
       popup: {
         show: showSpoofPopup,
-        toggle: toggleshowSpoofPopup,
+        toggle: toggleShowSpoofPopup,
         video: spoofToolVideo,
       },
     },
@@ -70,7 +92,7 @@ const Projects = forwardRef((props, ref) => {
         "An app to create web proxies using cloud platforms like Google, AWS, and more.",
       technologies: ["React", "Electron", "Google Cloud API", "AWS SDK"],
       github: "",
-      live: "", // TODO : add video example
+      live: "",
       image: proxyImg,
       popup: {
         show: showProxyPopup,

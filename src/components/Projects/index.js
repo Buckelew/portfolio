@@ -30,14 +30,7 @@ const Projects = forwardRef((props, ref) => {
       name: "Pacific AIO",
       description:
         "A checkout automation tool for securing limited collectibles.",
-      technologies: [
-        "React",
-        "Express",
-        "Mongo DB",
-        "Electron",
-        "Express",
-        "Node.JS",
-      ],
+      technologies: ["React", "Express", "Mongo DB", "Electron", "Node.JS"],
       live: "",
       image: pacificImg,
       popup: {

@@ -17,10 +17,10 @@ const About = forwardRef((props, ref) => {
             repetitive task, or developing an entire app.
           </p>
           <br />
-          <p>
+          {/* <p>
             My hobbies: Music (Hip-Hop), Festivals, Fitness, Nature, Cars,
             Sneakers, Technology, Gaming, Sports, Movies...
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="right">

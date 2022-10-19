@@ -47,15 +47,15 @@ const Projects = forwardRef((props, ref) => {
       live: "https://caden-cardle.herokuapp.com/",
       image: cardleImg,
     },
-    {
-      name: "Spotify App",
-      description:
-        "A way to view your favorite artists, and tracks via Spotify API.",
-      technologies: ["React", "Material UI", "Spotify API", "Express"],
-      github: "https://github.com/Buckelew/spotify-app",
-      live: "https://caden-spotify.herokuapp.com/",
-      image: spotifyImg,
-    },
+    // {
+    //   name: "Spotify App",
+    //   description:
+    //     "A way to view your favorite artists, and tracks via Spotify API.",
+    //   technologies: ["React", "Material UI", "Spotify API", "Express"],
+    //   github: "https://github.com/Buckelew/spotify-app",
+    //   live: "https://caden-spotify.herokuapp.com/",
+    //   image: spotifyImg,
+    // },
     {
       name: "Spoof Tool",
       description:

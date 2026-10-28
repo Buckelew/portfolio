@@ -11,10 +11,9 @@ const About = forwardRef((props, ref) => {
         <h1>About me</h1>
         <div className="text">
           <p>
-            Hi! I'm Caden, a full stack developer with a passion for creating,
-            learning, and problem solving. I enjoy making tools to make people's
-            lives easier. Whether that's making a quick script to automate a
-            repetitive task, or developing an entire app.
+            Hi! I'm Caden, a full stack developer at Emberex. I've built a
+            learning platform used by 3M+ students and an AI-assisted therapy
+            app, mostly in TypeScript, React, Node, Python, and Postgres.
           </p>
           <br />
           {/* <p>

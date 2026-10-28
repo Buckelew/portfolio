@@ -10,20 +10,6 @@ function Header({ homeRef, aboutRef, projectsRef, contactRef }) {
     ref.current.scrollIntoView();
   };
 
-  const downloadResume = () => {
-    // using Java Script method to get PDF file
-    fetch("resume.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Caden Buckelew Resume.pdf";
-        alink.click();
-      });
-    });
-  };
 
   return (
     <header className="Header">
@@ -39,7 +25,6 @@ function Header({ homeRef, aboutRef, projectsRef, contactRef }) {
           {/* <span onClick={() => scroll(aboutRef)}>Expereience</span> */}
           <span onClick={() => scroll(projectsRef)}>Projects</span>
           <span onClick={() => scroll(contactRef)}>Contact</span>
-          <button onClick={downloadResume}>Resume</button>
         </nav>
         <div
           className={`hamburger ${hamburgerActive ? "active" : ""}`}
